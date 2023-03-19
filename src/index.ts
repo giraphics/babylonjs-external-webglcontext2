@@ -154,7 +154,7 @@ const createWebGL2Scene = (gl: WebGL2RenderingContext) => {
 }
 
 
-const renderBabylonCube = () => {
+const renderBabylonSphere = () => {
     scene.render();
 }
 
@@ -295,7 +295,7 @@ export const babylonInit = async (): Promise<void> => {
         renderGLCube(context, canvas.width, canvas.height, time+=0.01);
 
         // Render the Babylon scene second
-        renderBabylonCube();
+        renderBabylonSphere();
     }
 
     // Register a render loop to repeatedly render the scene

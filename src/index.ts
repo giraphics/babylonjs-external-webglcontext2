@@ -279,7 +279,7 @@ export const babylonInit = async (): Promise<void> => {
     if (!context) return;
 
     // Generate the BABYLON 3D engine
-    engine = new Engine(context, true);
+    engine = new Engine(context, true, {preserveDrawingBuffer : true});
 
     let time = 0.01;
 

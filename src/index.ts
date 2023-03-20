@@ -286,7 +286,8 @@ export const babylonInit = async (): Promise<void> => {
     // Create Babylon scene,  with 'autoClear = false';
     const scene = createBabylonScene(engine, canvas);
     scene.autoClear = false;
-
+    scene.autoClearDepthAndStencil = false;
+    
     // Create WebGL2 scene
     createWebGL2Scene(context);
     
